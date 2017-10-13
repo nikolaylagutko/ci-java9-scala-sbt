@@ -8,7 +8,7 @@ jobs:
       - run:
           docker login -u $DOCKER_USER -p $DOCKER_PASS
       - run:
-          docker build -t nikolaylagutko/ci-java9-sbt
+          docker build -t nikolaylagutko/ci-java9-sbt .
       - run:
           docker push
 workflows:
