@@ -1,5 +1,8 @@
 FROM centos:latest
 
+# install default circleci packages
+RUN yum -y install git ssh tar gzip ca-certificates
+
 # install wget
 RUN yum -y install wget
 
