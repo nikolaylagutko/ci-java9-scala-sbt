@@ -2,10 +2,10 @@ version: 2
 jobs:
   build:
     machine: true
+    context: org-global
     steps:
       - checkout
       - run:
-          context: org-global
           docker login -u $DOCKER_USER -p $DOCKER_PASS
       - run:
           docker build -t nikolaylagutko/ci-java9-sbt
