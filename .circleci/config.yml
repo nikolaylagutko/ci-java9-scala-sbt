@@ -10,7 +10,7 @@ jobs:
       - run:
           docker build -t nikolaylagutko/ci-java9-sbt .
       - run:
-          docker push
+          docker push nikolaylagutko/ci-java9-sbt
 workflows:
   version: 2
   build:
