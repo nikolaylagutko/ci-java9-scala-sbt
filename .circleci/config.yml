@@ -11,3 +11,9 @@ jobs:
           docker build -t nikolaylagutko/ci-java9-sbt
       - run:
           docker push
+workflows:
+  version: 2
+  build:
+    jobs:
+      - biuld:
+          context: org-global
