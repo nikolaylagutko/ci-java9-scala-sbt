@@ -12,7 +12,7 @@ RUN yum -y install jdk-9_linux-x64_bin.rpm
 
 # install sbt
 RUN curl https://bintray.com/sbt/rpm/rpm | tee /etc/yum.repos.d/bintray-sbt-rpm.repo
-RUN yum -y install sbt
+RUN yum -y install sbt bc
 
 # install rpm-tools
 RUN yum -y install rpm-build
